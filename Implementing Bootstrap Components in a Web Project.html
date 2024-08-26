@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andreas Jovovich - Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+<!--Task 1: Implement a Responsive Navigation Bar-->    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Andreas Jovovich</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center my-4">
+        <h1 class="display-4">Welcome to my professional portfolio</h1>
+        <img src="IMG_0375.jpeg" alt="Picture of Andreas Jovovich" class="profile-pic img-fluid rounded-circle" >
+        <p class="lead"><strong>Hi there! My name is Andreas Jovovich</strong></p>
+        <p class="text-secondary">I grew up training as a dancer, went through a professional career, and decided to pivot into software engineering.</p>
+    </header>
+
+
+    <section id="gallery" class="py-4">
+        <h2 class="text-center">Gallery</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <img src="DancePhotos/Dance1.jpg" class="img-fluid rounded" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="DancePhotos/Dance2.jpg" class="img-fluid rounded" alt="Gallery Image 2">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="DancePhotos/Dance3.jpg" class="img-fluid rounded" alt="Gallery Image 3">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="DancePhotos/Dance4.jpg" class="img-fluid rounded" alt="Gallery Image 3">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="DancePhotos/Dance5.jpg" class="img-fluid rounded" alt="Gallery Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="text-center bg-light py-4">
+        <h2 class="font-weight-bold">About me:</h2>
+        <p class="font-italic">Here is a little more info about my life!</p>
+        <h3>Background:</h3>
+        <p>
+            I started training to become a dancer in high school. I pursued the career for the next 13 years. I was able to perform in many things, from live performances to TV. <br>
+            After my career in dance, I decided to pursue something else I was passionate about: software engineering. I've always loved computers and found development fascinating. <br>
+            So here I am, starting the journey to my coding path!
+        </p>
+        <h3>Education:</h3>
+        <ul class="list-unstyled">
+            <li>High School Diploma</li>
+            <li>BFA in Commercial Dance from PACE University</li>
+            <li>Coding Temple (Currently enrolled)</li>
+        </ul>
+        <h3>Career Goals:</h3>
+        <ul class="list-unstyled">
+            <li>Graduate Coding Temple</li>
+            <li>Work as a software engineer</li>
+            <li>Develop family-owned dance studio further</li>
+        </ul>
+        <h3>Personal Interests:</h3>
+        <ul class="list-unstyled">
+            <li>Sports</li>
+            <li>Working-Out</li>
+            <li>Video Games</li>
+            <li>Reading</li>
+        </ul>
+    </section>
+
+<!--Task 2: Enhance Visual Appeal with Bootstrap Cards-->
+
+    <section id="projects" class="bg-light text-dark py-4">
+        <h2>Projects:</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Database</h5>
+                            <p class="card-text">Developed a database using SQL and Python for logging data involving customers, orders, accounts, deliveries, and transactions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Library Management System</h5>
+                            <p class="card-text">Developed an application to organize a library system. It categorized books by genre and author. It also kept track of user accounts, stock, and books borrowed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="skills" class="py-4">
+        <h2>Skills:</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Proficiency</th>
+                        <th>Years of Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>Intermediate</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Python/SQL</td>
+                        <td>Intermediate</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Genre</th>
+                        <th>Proficiency</th>
+                        <th>Years of Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ballet</td>
+                        <td>Expert</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Contemporary</td>
+                        <td>Master</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Hip-Hop</td>
+                        <td>Expert</td>
+                        <td>13</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+<!--Task 3: Add Dynamic Interactivity with Bootstrap Buttons-->
+    <section id="contact" class="bg-light py-4 text-center">
+        <h2>Contact:</h2>
+        <ul class="contact-info mt-3">
+            <li><i class="fa fa-phone"></i> 215-478-4751</li>
+            <li><i class="fa fa-envelope"></i> <a href="mailto:ajovovich1@gmail.com" class="text-dark"> ajovovich1@gmail.com</a></li>
+            <li><i class="fa fa-instagram"></i><a href="https://www.instagram.com/andreas._edward/" class="text-dark"> Instagram</a></li>
+            <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/andreas-jovovich-8472006b/" class="text-dark"> LinkedIn</a></li>
+            <button type="button" class="btn btn-primary">Book me!</button>
+        </ul>
+    </section>
+
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>&copy; 2024 Andreas Jovovich. All rights reserved.</p>
+                </div>
+                <div class="col-md-4">
+                    <p><a href="#about" class="text-white">About</a> | <a href="#projects" class="text-white">Projects</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p><a href="mailto:ajovovich1@gmail.com" class="text-white">Contact</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+</body>
+</html>
